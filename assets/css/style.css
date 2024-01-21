@@ -4,6 +4,7 @@
 /* Variables */
 :root {
     --c-brand: #5b51e6;
+    --c-brand-rgb: 0, 0, 0;         /* black color for the timelime line  */
     --c-dark: #303050;
     --c-body: #636383;
     --f-main: "Krub", sans-serif;
@@ -47,17 +48,17 @@ img {
 
 .setion-title {
     max-width: 560px;
-    margin: 0 auto 60px auto;
+    margin: 0 auto 60px auto;       /*The margin is 0 for the top, auto for the right, 60px for the bottom and auto for the left. */
 }
 
-.setion-title .line {
+.setion-title .line {              /*  horizontal line separating each section */
     width: 60px;
     height: 2px;
     background-color: var(--c-brand);
     display: inline-block;
 }
 
-.section-connector {
+.section-connector {            /*  vertical line separating each section */
     position: relative;
 }
 
@@ -86,7 +87,7 @@ img {
 }
 
 .navbar-toggler {
-    border-radius: 0;
+    border-radius: 10;
 }
 
 .navbar-toggler:focus {
@@ -187,7 +188,7 @@ img {
 }
 
 /* Project */
-.project {
+.project {                  /* defines what happens to the images in the work section */
     overflow: hidden;
     position: relative;
 }
@@ -213,7 +214,7 @@ img {
     top: 0;
 }
 
-.project:hover img {
+.project:hover img {                /* makes the image go up  */
     transform: translateY(-100%);
 }
 
@@ -236,6 +237,7 @@ img {
     content: '';
     height: 100%;
     width: 1px;
+    background-color: rgba(var(--c-brand-rgb), 0.4);
     position: absolute;
     left: 0;
     top: 0;
@@ -251,6 +253,7 @@ img {
     top: 0;
 }
 
+/* Contact */
 #contact .form-control {
     border-radius: 0;
 }

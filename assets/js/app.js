@@ -7,7 +7,7 @@ window.onscroll = function() {
     }
 }
 
-// AOS
+// AOS - animation
 AOS.init({
-    duration: 800,
+    duration: 800,          //to shorten the duration of the animation
 });
